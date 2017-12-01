@@ -1,0 +1,13 @@
+.over-ell
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+.clear-fix
+  display:inline-block
+  &:after
+    content: "."
+    display: block
+    height: 0
+    line-height: 0
+    clear: both
+    visibility: hidden

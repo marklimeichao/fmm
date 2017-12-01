@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>吃饭美美哒</title>
+  <link rel="stylesheet" href="./static/reset.css">
+  <!--<script src="./static/mobile-util.js"></script>-->
+  <!--<script src="./static/jsencrypt.js"></script>-->
+  <!--<script src="http://passport.cnblogs.com/scripts/jsencrypt.min.js"></script>-->
+
+
+  <script src="./static/tripledes.js"></script>
+  <script src="./static/mode-ecb.js"></script>
+  <script src="./static/zhuge.js"></script>
+  <!--<script src="./static/base64.js"></script>-->
+  <script>
+    //  import BScroll from 'better-scroll'
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+   
+    // let scroll = new BScroll('body')
+  </script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4DkEkHWNZYLGgFugYhgRS8CD0fxyeXK1"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
+<style>
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    -webkit-overflow-scrolling: touch;
+  }
+</style>
+<!--<script>
+  export default{
+
+  }
+</script>-->

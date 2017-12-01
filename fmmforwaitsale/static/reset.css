@@ -1,0 +1,40 @@
+/*公用部分*/
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, img, dl, dt, dd, table, th, td, blockquote, fieldset, div, strong, label, em, a, span, input{margin:0;padding:0; font-family:'微软雅黑','Arial';-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+html,body {height:100%;  font-size: .28rem; color: #434343;background: #fff;}
+textarea{resize: none;}
+ul li{list-style: none;}
+a{text-decoration: none;color: #434343;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+em,i{font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+input,textarea{outline: none;}
+.clear:after{
+     clear:both;
+    content:'.';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+.clearfix{zoom:1;}
+/*文本超出一行显示省略号*/
+.ell{overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;}
+/*盒图宽高=content+border*/
+.border-box{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+a, input, select{outline: none;}
+button{
+    outline: none;
+    border: none;
+}
+input,textarea{
+    -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+}
